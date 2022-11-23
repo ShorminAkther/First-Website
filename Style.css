@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+   
+}
+#NavigationBar {
+    width: 100%;
+   background-image: linear-gradient(dodgerblue, rgb(20, 5, 85));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    padding-right: 90px;
+   
+}
+
+#NavigationBar > ul {
+    display: flex;
+   
+}
+
+/* Here we only set padding up-down  bcoz then link set in the a tag so we havo to set another padding for up-down, left-right and also borderr-laf, border-right in the anchoe <a> tag*/
+#NavigationBar > ul > li {
+    list-style: none;
+    padding: 20px 0px;
+   
+}
+ 
+
+
+
+/* We have to set border right and left and padding up-down, left-right here in <a>tag */
+
+#NavigationBar > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 20px 25px;
+    border-right: 1px solid white;
+    
+}
+
+
+#NavigationBar > ul > li:first-child > a {
+    border-left: 1px solid white;
+}
+
+#NavigationBar > ul > li:hover > a {
+
+    background-image: linear-gradient(rgb(200, 59, 212), rgb(44, 3, 39)) ;
+    color: yellow;
+    
+    }
+
+    .Logo > h2 {
+        color: white;
+        font-family: 'Tangerine', cursive;
+        font-size: 40px;
+        transform: scaleX(1);
+        transform-origin: center;
+        transition: 1s;
+    }
+
+    .Logo:hover > h2{
+        transform:scaleX(1.5);
+        color: rgb(238, 89, 193);
+        text-shadow: 10px 15px 4px black;
+    }
+    .P {
+        color: yellow;
+        font-size: 60px;
+    }
+
+    /* Dropdown menue code start */
+    .dropdownMenu {
+        opacity: 0;
+        visibility: hidden;
+        background-color: dodgerblue;
+        text-align: center;
+        margin-top: 20px;
+        width: 210px;
+        position: absolute;
+        transition: 0.5s;
+        transform: scaley(0);
+        transform-origin: top;
+        box-shadow: 10px 15px 8px black;
+        
+    }
+
+    #NavigationBar > ul > li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        transform: scaleY(1);
+    }
+
+    .dropdownMenu > li {
+        list-style: none;
+        padding: 10px 0px;
+        border-bottom: 1px solid white;
+        transition: 0.5s;
+       
+    }
+    .dropdownMenu > li:hover {
+        background-image: linear-gradient(rgb(200, 59, 212), rgb(44, 3, 39)) ;
+       
+    }
+
+    .dropdownMenu > li:first-child {
+        border-top: 1px solid white;
+    }
+
+    .dropdownMenu > li > a {
+        text-decoration: none;
+        color: white;
+        
+    }
+
+    .dropdownMenu > li:hover >a {
+        color: yellow;
+    }
+
+   
+
+    /* hero area code start here */
+
+    #main-header {
+        text-align: center;
+        height: 90vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.438)), url(Image/laptop.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center ;
+    }
+
+    .header-container {
+        padding-top: 100px;
+    
+    }
+
+    .header-container > h4 {
+        font-size: 20px;
+        color: rgb(59, 56, 56);
+    }
+
+    .header-container > h1 {
+        color: rgb(214, 206, 206);
+        background-color: rgba(2, 43, 85, 0.658);
+        width: 450px;
+        font-size: 50px;
+        margin: 30px auto;
+        padding: 10px 5px;
+        border-radius: 10px;
+        border: 3px solid green;
+       
+       
+    }
+    .header-container > h5 {
+        font-size: 15px;
+        color: rgb(29, 28, 28);
+        padding-top: 15px;
+    }
+
+    .header-container > button {
+        margin-top: 25px ;
+        padding: 5px 10px;
+        background-color: rgba(7, 47, 87, 0.699);
+        color: white;
+        border: 3px solid green;
+        border-radius: 25px 10px 25px 10px;
+
+    }
+
+    .header-container > button:hover {
+        background-color: rgba(0, 0, 0, 0.192);
+        cursor: pointer;
+    }
+
+   
+    .icon > a {
+        text-decoration: none;
+        
+    }
+    .icon > a:first-child > i {
+        color:  #FF0000;
+        font-size: 20px;
+    }
+
+    .icon > a:nth-child(2) >i {
+        color: #3b5998;
+        font-size: 20px;
+    }
+
+    .icon > a > i {
+        width: 40px;
+        height: 40px;
+        line-height:1.5;
+        font: size 30px;
+        margin: 30px 5px 10px 5px;
+        background-color: rgb(245, 236, 236);
+        padding:5px;
+        border: 2px solid green;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    .icon > a > i:hover {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid green;
+        transform:rotate(360deg);
+    }
+
+    /* First section code start here */
+
+    #first-section {
+        background-color: rgb(243, 240, 240);
+    }
+
+    #parent-container {
+        width: 1000px;
+        margin:auto;
+        display: flex;
+        justify-content:space-between ;
+        padding: 100px 0px;
+        
+
+    }
+
+    .learn-programming {
+        width: 300px;
+        text-align: center;
+        padding: 30px 10px;
+        transition: 0.5s;
+    }
+
+    .learn-programming:hover {
+        box-shadow: 10px 10px 10px gray ;
+    }
+
+    .learn-programming > i {
+        font-size: 50px;
+    }
+
+    .learn-programming > h2 {
+        margin: 15px 0px;
+    }
+
+    /* second section code start */
+
+    .smart-area-title {
+      width: 250px;
+      margin: auto;
+      position: relative;
+    }
+
+    .smart-area-title > h2 {
+        font-size: 40px;
+        text-align: center;
+       
+     }
+
+     .smart-area-title > h2::after {
+        content:'';
+        width: 100px;
+        height: 5px;
+        position:absolute;
+        top: 55px;
+        left: 68px;
+        background-color: maroon;
+     }
+
+     .smart-area {
+        width: 1000px;
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0px;
+       
+     }
+
+     
+     .smart-area-text  {
+        width: 500px;
+     }
+      
+     .smart-area-text > h2 {
+       margin: 20px 0px ; 
+     }
+
+     .smart-area-text > h4 {
+        color: maroon;
+     }
+
+     .smart-area-text > a {
+        text-decoration: none;
+        background-color: maroon;
+        color: white;
+        font-size: 20px;
+        padding: 10px 30px;
+        margin: 20px 0px;
+        display: inline-block;
+        border-radius: 5px;
+        transition: 0.5s;
+     }
+
+     .smart-area-text > a:hover {
+        background-color: rgb(56, 2, 2);
+     }
+
+     /* 3rd section code start here */
+
+       .Third-section {
+        background-color: rgb(245, 236, 238);
+     }
+
+     .srvices-area-title {
+        text-align: center;
+        padding: 40px 0px 60px 0px;
+     }
+
+     .srvices-area-title > h2{
+        font-size: 35px;
+
+     }
+
+     .Services-area {
+        width: 1000px;
+        margin: auto;
+     }
+     .Each-services-parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding-bottom: 60px;
+        
+     }
+
+     .each-services {
+        background-color: rgb(140, 220, 247);
+        padding: 30px 0px;
+        text-align: center;
+        transition: 0.5s;
+     }
+
+     .each-services >i {
+        font-size: 40px;
+        color: rgb(156, 16, 16);
+
+     }
+
+     .each-services > h3 {
+        margin: 20px 0px;
+     }
+
+     .each-services:hover {
+        background-color: rgb(193, 238, 253);
+     }
+
+     /* fourth section code start here... */
+
+     #fourth-section {
+        background-color: #e6d7e1;
+     }
+     .Pricing-area-container {
+       width: 1000px;
+       margin: auto; 
+       padding-bottom: 100px;   
+    } 
+     .Pricing-area-title {
+        text-align: center;
+        padding: 50px 0;
+     }
+
+     .Pricing-area-title > h2 {
+        font-size: 35px;
+     }
+     .Pricing-card-parent {
+        display:flex;
+        justify-content: space-between;
+
+
+     }
+
+     .pricing-single-card {
+        width: 310px;
+        text-align: center;
+        box-shadow: 5px 5px 10px gray;
+     }
+     .Pricing-card-image {
+        width: 310px;
+     }
+     .Pricing-card-image >img {
+        max-width: 100%;
+     }
+     .pricing-single-card > h3 {
+        font-size: 20px;
+        margin: 20px 0;
+     }
+     .pricing-PerMonth {
+        border-top: 1px dashed gray;
+        border-bottom: 1px dashed gray;
+        margin: 15px 10px;
+        padding: 15px 0;
+     }
+     .pricing-PerMonth >.pricing-month-span1 {
+        font-size: 25px;
+     }
+     .pricing-PerMonth >.pricing-month-span2 {
+        color: gray;
+     }
+     .pricing-single-card > button {
+        background-color: maroon;
+        color: white;
+        cursor: pointer;
+        padding: 15px 40px;
+        border-radius: 5px;
+        transition: 0.5s;
+     }
+
+     .pricing-single-card > button:hover {
+        background-color: rgba(128, 0, 0, 0);
+        color: black;
+     }
+
+     .pricing-single-card >a {
+       text-decoration: none;
+       margin: 15px 0px;
+       display:inline-block;
+       color:rgb(109, 102, 102);
+     }
+
+     /* 5th section code start here */
+
+     #fifth-section {
+       background-color:#ffe3c5 ;
+       padding-bottom: 100px;
+     }
+
+     .testo-title {
+       text-align: center;
+       padding: 50px 0;
+     }
+     .testo-title h2 {
+       font-size: 35px;
+     }
+     .testo-title h4 {
+      color: gray;
+       letter-spacing: 0.4em;
+       padding-top: 10px;
+     }
+
+     .testo-singleCard-Parent {
+       width: 1000px;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       grid-gap: 25px;
+
+     }
+     .testo-single-card {
+       display: flex;
+       align-items: center;
+       background-color: white;
+       padding: 20px 20px ;
+     }
+
+     .Testo-image-div {
+       width: 200px;
+       border-radius: 50%;
+       padding-right: 20px;
+     }
+     .Testo-image {
+       max-width: 100%;
+       border: 1px solid red;
+       border-radius: 50%;
+       }
+
+     .testo-singlecard-text span {
+       font-size: 20px;
+       margin-bottom: 20px;
+       display: inline-block;
+     }
+     .testo-singlecard-text i{
+       color: rgba(252, 165, 5, 0.938);
+       padding-top: 10px;
+   }
+
+   /* Sixth-section-code start here */
+
+   #sixth-section {
+     padding: 80px 0;
+     background-image: url(image/parallax.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     }
+  
+
+ .Paralex-Section-parent {
+   width: 1000px;
+   margin: auto;
+   display: flex; 
+   justify-content: space-between;
+   color: white;
+   text-align: center;
+ }
+
+ .Paralex-Section i {
+   font-size: 25px;
+ }
+
+ .Paralex-Section h2 {
+   padding: 20px 0;
+ }
+
+ /* Seventh section (blog section) code start here */
+
+  #blog-section {
+    padding-bottom: 100px;
+  }
+ .blog-card-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    width: 1000px;
+    margin: auto;
+   
+    text-align: center;
+ }
+ .blog-image-icon-div{
+    position: relative;
+    overflow: hidden;
+    
+ }
+
+ 
+ .blog-image-icon-div > img {
+    max-width: 100%;
+    height: 250px; 
+    transition: 0.5s; 
+}
+
+.blog-image-icon-div:hover >img {
+    transform: scale(1.5);
+ }
+
+
+ .blog-icon {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    font-size: 22px;
+    opacity: 0;
+    transition: 0.5s;
+    
+ }
+
+ .blog-image-icon-div:hover .blog-icon{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.37)
+ }
+
+ .blog-icon >i {
+    font-size: 40px;
+    padding-bottom: 20px;
+ }
+ .blog-card-text {
+    margin: 10px 0;
+ }
+
+ .blog-card-text >p {
+   margin-top: 10px; 
+   color: gray;
+ }
+
+ /* Contact section code start here */
+
+ .contact-container {
+    width: 1000px;
+    margin: auto;
+ }
+
+ .Form-Map-parent-div {
+    display: flex;
+ }
+ .Form-section {
+    width: 600px;
+    background-color: #cccdd2;
+ }
+
+ .FullName-Email-div {
+    display: flex;
+ }
+ .FullName-Email-div h4 {
+    margin: 40px 0 10px 20px;
+    
+ }
+ .FullName-Email-div input {
+    margin: 0 20px 0 20px;
+    padding: 10px;
+    width: 220px;
+    border: none;
+    border-radius: 5px;
+ }
+
+ .Subject-div h4 {
+   margin: 20px 0 10px 20px;
+ }
+ .Subject-div input {
+   margin-left: 20px;
+   width: 550px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+ }
+ .Message-div h4 {
+   margin: 20px 0 10px 20px;
+  
+ }
+ .Message-div textarea {
+   margin-left: 20px;
+   width: 550px;
+   height: 80px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+ }
+
+ .Contact-button input {
+   margin: 20px;
+   padding: 10px;
+   border: none;
+   background-color: rgb(4, 4, 87);
+   color: white;
+   border-radius: 5px;
+ }
+
+ .form-contact-section-div {
+   display: flex;
+   margin:auto;
+   justify-content: space-between;
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 100px;
+ }
+
+ .form-contact-section-div i {
+   background-color: #040457;
+   color: white;
+   padding: 15px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+
+ }
+ .form-contact-single-div > p> span {
+   font-weight: bold;
+ }
+/* footer section code start here */
+
+.footer-section {
+   background-color: #040457;
+   color: gray;
+}
+ .footer-container {
+   width: 1000px;
+   margin: auto;
+ }
+
+ .footer-Single-item-parent{
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .footer-single-item {
+   width:220px ;
+   overflow: hidden;
+ }
+
+ .footer-single-item h3 {
+   color: white;
+   padding: 50px 0 20px 0;
+ }
+
+ .footer-firstdiv-p1 {
+   margin-bottom: 20px;
+ }
+
+ .footer-firstDiv-p2 {
+   margin: 10px 0;
+ }
+
+ .footer-single-item  i {
+   color: white;
+ }
+ .footer-Single-item-parent .footer-single-item:nth-child(2) p{
+   margin: 10px 0;
+ }
+ .footer-Single-item-parent .footer-single-item:nth-child(3) p {
+   margin:10px 0;
+ }
+
+ .footer-Single-item-parent .footer-single-item:nth-child(4) p{
+   margin: 10px 0;
+ }
+
+ .footer-Single-item-parent .footer-single-item:nth-child(4) a {
+   text-decoration: none;
+   color:brown
+ }
+
+ .footer-MenuItem ul {
+   display: flex;
+   justify-content: center;
+ }
+
+ .footer-MenuItem ul li {
+   list-style-type: none;
+   margin: 20px;
+ }
+
+ .footer-MenuItem ul li a {
+   text-decoration: none;
+   font: size 20px;
+   font-weight: bold;
+   color: gray;
+
+ }
+
+ .footer-MenuItem p{
+   text-align: center;
+   padding-bottom: 20px;
+ }
+ .footer-MenuItem span {
+   color: brown;
+ }
+
+ hr {
+   margin-top: 40px;
+ }
